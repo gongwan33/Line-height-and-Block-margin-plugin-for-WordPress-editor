@@ -44,6 +44,7 @@ function te_register_tinymce_button( $buttons ) {
 }
 
 function te_add_tinymce_button( $plugin_array ) {
-    $plugin_array['my_button_script'] = TE_URL.'/js/tinymce_plugin_te.js';
+    //$plugin_array['my_button_script'] = TE_URL.'/js/tinymce_plugin_te.js';    //For debug only
+    $plugin_array['my_button_script'] = TE_URL.'/js/tinymce_plugin_te.min.js';
     return $plugin_array;
 }
